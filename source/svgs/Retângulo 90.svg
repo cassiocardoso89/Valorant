@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="1323" viewBox="0 0 1366 1323">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0d161f"/>
+      <stop offset="0.313" stop-color="#0d161f" stop-opacity="0.251"/>
+      <stop offset="0.746" stop-color="#0d161f" stop-opacity="0.251"/>
+      <stop offset="1" stop-color="#0d161f"/>
+    </linearGradient>
+  </defs>
+  <rect id="Retângulo_90" data-name="Retângulo 90" width="1366" height="1323" fill="url(#linear-gradient)"/>
+</svg>

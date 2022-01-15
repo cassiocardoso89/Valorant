@@ -1,0 +1,13 @@
+body{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    background-color: rgb(13, 22, 31);
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+}
+
+a, a:link, a:visited, a:active {
+    color: #fff;
+    text-decoration: none;
+}

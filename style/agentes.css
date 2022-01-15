@@ -1,0 +1,8 @@
+.agentes{
+    background-image: url('../source/bgs/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1323px;
+    opacity: 0.1;
+}

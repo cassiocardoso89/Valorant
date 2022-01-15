@@ -1,5 +1,4 @@
 body{
-    /* font-family: 'Courier New', Courier, monospace; */
     font-size: 14px;
     background-color: rgb(13, 22, 31);
     color: #fff;
@@ -10,5 +9,4 @@ body{
 a, a:link, a:visited, a:active {
     color: #fff;
     text-decoration: none;
-    /* font-family: 'Courier New', Courier, monospace; */
 }

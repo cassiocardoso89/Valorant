@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url('../source/bgs/bg3.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -8,7 +8,7 @@ body{
 
 /* MAPAS */
 /* default */
-.linha-vermelha-esquerda{
+.linha-vermelha-esquerda {
     background-color: #e13157;
     height: 3px;
     width: 60%;
@@ -17,13 +17,13 @@ body{
     left: 0;
 }
 
-.tituloMapas{
+.tituloMapas {
     font-size: 40px;
     font-style: italic;
     text-transform: uppercase;
 }
 
-.linha-vermelha-direita{
+.linha-vermelha-direita {
     background-color: #e13157;
     height: 3px;
     width: 60%;
@@ -31,7 +31,7 @@ body{
     right: 0px;
 }
 
-.containerMapas{
+.containerMapas {
     display: flex;
     margin: 50px 0;
     overflow: scroll;
@@ -41,29 +41,29 @@ body{
 
 }
 
-.containerMapas::after{
+.containerMapas::after {
     content: ">";
     position: absolute;
     right: 20px;
     top: 45%;
     font-size: 80px;
     color: #e13157;
-    text-shadow:  -5px 5px 5px #0e0e0e;
+    text-shadow: -5px 5px 5px #0e0e0e;
     cursor: pointer;
 }
 
-.containerMapas::before{
+.containerMapas::before {
     content: "<";
     position: absolute;
     left: 20px;
     top: 45%;
     font-size: 80px;
     color: #e13157;
-    text-shadow:  5px 5px 5px #0e0e0e;
+    text-shadow: 5px 5px 5px #0e0e0e;
     cursor: pointer;
 }
 
-.mapaImg{
+.mapaImg {
     max-width: 500px;
     padding: 10px;
     border-radius: 20px;
@@ -71,7 +71,7 @@ body{
     cursor: pointer;
 }
 
-.verMaisMapas{
+.verMaisMapas {
     text-align: right;
     padding: 10px;
     margin-right: 50px;
@@ -80,7 +80,7 @@ body{
     cursor: pointer;
 }
 
-.modalMapaBG{
+.modalMapaBG {
     position: fixed;
     top: 0;
     left: 0;
@@ -97,23 +97,24 @@ body{
     opacity: 0;
     transition: visibility 0s, opacity 0.5s;
 }
-.modal{
+
+.modal {
     border-radius: 15px;
     width: 50%;
     position: relative;
 }
 
-.bg-active{
+.bg-active {
     visibility: visible;
     opacity: 1;
 }
 
-.imagemMapa{
+.imagemMapa {
     width: 100%;
     border-radius: 15px;
 }
 
-.btnFechar{
+.btnFechar {
     color: #e13157;
     text-shadow: 3px 3px 5px #000000;
     position: absolute;
@@ -126,38 +127,39 @@ body{
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
 }
-.btnFechar::before{
+
+.btnFechar::before {
     content: "X";
 }
 
 /* ARMAS */
 
-/* Baixe */
-.baixe{
+/* BAOXE */
+.baixe {
     padding: 50px 0;
     display: flex;
     justify-content: space-evenly;
-
     align-items: center;
 }
-.tituloBaixe{
+
+.tituloBaixe {
     font-size: 40px;
     font-style: italic;
     text-transform: uppercase;
 }
 
-.listaVantagens{
+.listaVantagens {
     font-size: 20px;
     font-weight: lighter;
     list-style-type: none;
     padding: 0;
 }
 
-.listaVantagens li{
+.listaVantagens li {
     margin: 20px 0;
 }
 
-.btnDownload{
+.btnDownload {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,7 +176,107 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.btnDownload img{
+.btnDownload img {
     margin-right: 10px;
 }
 
+/* SUPORTE */
+.suporte {
+    background-color: #fff;
+    margin: 80px;
+    padding: 60px;
+    color: #133052;
+    border-radius: 5px;
+}
+
+.tituloSuporte {
+    font-size: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "formulario formulario imagem"
+        "formulario formulario imagem"
+        "formulario formulario imagem";
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 25px 50px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nome sobrenome"
+        "email apelido"
+        "assunto assunto"
+        "mensagem mensagem"
+        "btnEnviar btnEnviar";
+    
+    grid-area: formulario;
+    text-align: center;
+}
+
+.nome{grid-area: nome;}
+
+.sobrenome{ grid-area: sobrenome;}
+
+.btnEnviar{
+    grid-area: btnEnviar;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mensagem{ grid-area: mensagem;}
+
+.assunto{ grid-area: assunto;}
+
+.email{ grid-area: email;}
+
+.apelido{ grid-area: apelido;}
+
+.imagem{
+    grid-area: imagem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container input{
+    width: 100%;
+    border: #133052 solid 1px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.inpMensagem{
+    height: 140px;
+    width: 100%;
+    border: #133052 solid 1px;
+    border-radius: 5px;
+}
+
+.btnEnviar button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e13157;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 183px;
+    height: 36px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;   
+}

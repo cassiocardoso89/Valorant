@@ -65,7 +65,7 @@ nav{
     text-align: center;
     font-weight: normal;
     font-size: 14px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'Montserrat', sans-serif;
     text-transform: uppercase;
     cursor: pointer;
 }

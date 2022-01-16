@@ -1,12 +1,8 @@
-body {
+.bg2 {
     background-image: url('../source/bgs/bg3.png');
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    font-family: 'Poppins', 'Montserrat', sans-serif;
 }
-
-
 /* ===================================================== */
 /* ===================================================== */
 /* ===================================================== */
@@ -197,9 +193,6 @@ body {
     max-width: 50%;
 }
 
-
-
-
 .imagemArmas {
     grid-area: imagemArmas;
     text-align: center;
@@ -373,13 +366,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.wrapper{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .nome{
     position: relative;
 }
@@ -388,11 +374,10 @@ body {
     height: 35px;
     margin-top: 25px;
     padding: 0 15px;
-    border: 2px solid #133052;
+    border: 1px solid #133052;
     border-radius: 5px;
     outline: none;
     transform-origin: top left;
-
     font-size: 1rem;
 }
 

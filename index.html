@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/agentes.css">
+    <link rel="stylesheet" href="./style/mapas-armas-baixe-suporte.css">
     <title>Valorant</title>
 </head>
 
@@ -44,31 +45,106 @@
         </h2>
     </section>
 
-    <section class="mapas">
-        <h2 class="tituloMapas">
-            Mapas
-        </h2>
-    </section>
+    <div class="bg2">
+        <section class="mapas">
+            <div class="linha-vermelha-esquerda"></div>
+            <h3 class="tituloMapas">Mapas</h3>
+            <div class="containerMapas"></div>
+            <p class="verMaisMapas">Ver mais</p>
+            <div class="linha-vermelha-direita"></div>
 
-    <section class="escolhaArmas">
-        <h2 class="tituloArmas">
-            Escolha suas Armas
-        </h2>
-    </section>
+            <div class="modalMapaBG">
+                <div class="modal">
+                    <button class="btnFechar"></button>
+                    <div class="mapaSelecionado">
+                        <img class="imagemMapa" src="" alt="foto">
+                    </div>
+                </div>
+            </div>
 
-    <section class="download">
-        <h2 class="tituloDownload">
-            Download
-        </h2>
-    </section>
+        </section>
 
-    <section class="suporte">
-        <h2 class="tituloSuporte">
-            Suporte
-        </h2>
-    </section>
+        <section class="armas">
+            <h3 class="tituloArmas">Escolha Suas Armas</h3>
+            <div class="containerArmas">
+                <div class="selecionaArmas">
+                    <div class="containerArmaPrimaria">
+                        <div class="caixaArma">
+                            <img class="imgArma" src="/source/guns/gun6.png" alt="imgArmaPrimaria">
+                        </div>
+                    </div>
+                    <div class="containerArmaSecundaria">
+                        <div class="caixaArma">
+                            <img class="imgArma" src="/source/guns/gun12.png" alt="imgArmaSecundaria">
+                        </div>
+                    </div>
+                    <div class="containerArmaBranca">
+                        <div class="caixaArma">
+                            <img class="imgArma" src="/source/guns/gun1.png" alt="imgArmaBranca">
+                        </div>
+                    </div>
+                </div>
+                <div class="imagemArmas">
+                    <img src="./source/agents/cypher.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="baixe">
+            <div class="caixaBaixe">
+                <h3 class="tituloBaixe">Baixe o Jogo</h3>
+                <ul class="listaVantagens">
+                    <li><img src="./source/svgs/Caminho 250.svg" alt=""> Jogue com seus amigos</li>
+                    <li><img src="./source/svgs/Caminho 246.svg" alt=""> Compre itens digitais</li>
+                    <li><img src="./source/svgs/Caminho 247.svg" alt=""> Torneios indepensentes</li>
+                </ul>
+                <button class="btnDownload">
+                    <img src="./source/svgs/Caminho 249.svg" alt="">
+                    Download
+                </button>
+            </div>
+            <div class="imagemBaixe">
+                <img src="./source/outros/baixe.png" alt="">
+            </div>
+        </section>
+
+        <section class="suporte">
+            <h3 class="tituloSuporte">Suporte</h3>
+            <div class="containerSuporte">
+                <div class="formulario">
+                    <div class="nome">
+                        <input class="suporteInput" type="text" id="nome" placeholder="Nome">
+                    </div>
+                    <div class="sobrenome">
+                        <input class="suporteInput" type="text" id="sobrenome" placeholder="Sobrenome">
+                    </div>
+                    <div class="email">
+                        <input class="suporteInput" type="email" id="email" placeholder="E-Mail">
+                    </div>
+                    <div class="apelido">
+                        <input class="suporteInput" type="text" id="apelido" placeholder="Apelido do Jogadr">
+                    </div>
+                    <div class="assunto">
+                        <input class="suporteInput" type="text" id="assunto" placeholder="Assunto">
+                    </div>
+                    <div class="mensagem">
+                        <textarea class="suporteInput" id="mensagem" placeholder="Mensagem"></textarea>
+                    </div>
+                </div>
+
+                <div class="btnEnviar">
+                    <button>Enviar</button>
+                </div>
+
+            </div>
+            <div class="imagemSuporte">
+                <img src="./source/outros/suporte.png" alt="">
+            </div>
+        </section>
+    </div>
 
 
+    <script src="./scripts/mapas.js"></script>
 </body>
 
 </html>

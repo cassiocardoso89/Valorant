@@ -6,6 +6,10 @@ body {
     font-family: 'Poppins', 'Montserrat', sans-serif;
 }
 
+
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
 /* MAPAS */
 /* default */
 .linha-vermelha-esquerda {
@@ -80,6 +84,8 @@ body {
     cursor: pointer;
 }
 
+
+/* modal */
 .modalMapaBG {
     position: fixed;
     top: 0;
@@ -132,9 +138,79 @@ body {
     content: "X";
 }
 
-/* ARMAS */
 
-/* BAOXE */
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+/* ARMAS */
+.containerArmas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-columns: auto;
+    gap: 0px 0px;
+    /* grid-auto-flow: row; */
+    grid-template-areas:
+        "selecionaArmas imagemArmas";
+}
+
+.selecionaArmas {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    /* grid-auto-flow: row; */
+    grid-template-areas:
+        "containerArmaPrimaria"
+        "containerArmaSecundaria"
+        "containerArmaBranca";
+    grid-area: selecionaArmas;
+    justify-items: center;
+}
+
+.containerArmaPrimaria {
+    grid-area: containerArmaPrimaria;
+}
+
+.containerArmaSecundaria {
+    grid-area: containerArmaSecundaria;
+}
+
+.containerArmaBranca {
+    grid-area: containerArmaBranca;
+}
+
+.caixaArma{
+    padding: 50px;
+    max-width: 300px;
+    border: #ccc solid 1px;
+    /* height: 195px; */
+    /* width: 325px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.imgArma{
+    max-width: 50%;
+}
+
+
+
+
+.imagemArmas {
+    grid-area: imagemArmas;
+    text-align: center;
+}
+
+
+
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+/* BAIXE */
 .baixe {
     padding: 50px 0;
     display: flex;
@@ -180,6 +256,10 @@ body {
     margin-right: 10px;
 }
 
+
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
 /* SUPORTE */
 .suporte {
     background-color: #fff;
@@ -195,16 +275,16 @@ body {
     text-transform: uppercase;
 }
 
-.container {
+.containerSuporte {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "formulario formulario imagem"
-        "formulario formulario imagem"
-        "formulario formulario imagem";
+        "formulario formulario imagemSuporte"
+        "formulario formulario imagemSuporte"
+        "formulario formulario imagemSuporte";
 }
 
 .formulario {
@@ -219,51 +299,63 @@ body {
         "assunto assunto"
         "mensagem mensagem"
         "btnEnviar btnEnviar";
-    
+
     grid-area: formulario;
     text-align: center;
 }
 
-.nome{grid-area: nome;}
+.nome {
+    grid-area: nome;
+}
 
-.sobrenome{ grid-area: sobrenome;}
+.sobrenome {
+    grid-area: sobrenome;
+}
 
-.btnEnviar{
+.btnEnviar {
     grid-area: btnEnviar;
     display: flex;
     justify-content: flex-end;
 }
 
-.mensagem{ grid-area: mensagem;}
+.mensagem {
+    grid-area: mensagem;
+}
 
-.assunto{ grid-area: assunto;}
+.assunto {
+    grid-area: assunto;
+}
 
-.email{ grid-area: email;}
+.email {
+    grid-area: email;
+}
 
-.apelido{ grid-area: apelido;}
+.apelido {
+    grid-area: apelido;
+}
 
-.imagem{
-    grid-area: imagem;
+.imagemSuporte {
+    grid-area: imagemSuporte;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.container input{
+.suporteInput{
     width: 100%;
     border: #133052 solid 1px;
     border-radius: 5px;
     height: 50px;
 }
 
-.inpMensagem{
+.inpMensagem {
     height: 140px;
     width: 100%;
     border: #133052 solid 1px;
     border-radius: 5px;
 }
 
-.btnEnviar button{
+.btnEnviar button {
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -278,5 +370,38 @@ body {
     font-size: 14px;
     font-weight: normal;
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;   
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nome{
+    position: relative;
+}
+.suporteInput{
+    width: 300px;
+    height: 35px;
+    margin-top: 25px;
+    padding: 0 15px;
+    border: 2px solid #133052;
+    border-radius: 5px;
+    outline: none;
+    transform-origin: top left;
+
+    font-size: 1rem;
+}
+
+.placeholder{
+    position: absolute;
+    top: 35px;
+    left: 15px;
+}
+
+.suporteInput::focus{
+    top: 15px;
 }

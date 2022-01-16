@@ -14,9 +14,9 @@
 <body>
 
     <!-- linha vermelha -->
-    <div class="linha-vermelha-esquerda"></div>
 
     <section class="mapas">
+        <div class="linha-vermelha-esquerda"></div>
         <h3 class="tituloMapas">Mapas</h3>
         <div class="containerMapas"></div>
         <p class="verMaisMapas">Ver mais</p>
@@ -30,23 +30,45 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
 
     <section class="armas">
         <h3 class="tituloArmas">Escolha Suas Armas</h3>
+        <div class="containerArmas">
+            <div class="selecionaArmas">
+                <div class="containerArmaPrimaria">
+                    <div class="caixaArma">
+                        <img class="imgArma" src="/source/guns/gun6.png" alt="imgArmaPrimaria">
+                    </div>
+                </div>
+                <div class="containerArmaSecundaria">
+                    <div class="caixaArma">
+                        <img class="imgArma" src="/source/guns/gun12.png" alt="imgArmaSecundaria">
+                    </div>
+                </div>
+                <div class="containerArmaBranca">
+                    <div class="caixaArma">
+                        <img class="imgArma" src="/source/guns/gun1.png" alt="imgArmaBranca">
+                    </div>
+                </div>
+            </div>
+            <div class="imagemArmas">
+                <img src="./source/agents/cypher.png" alt="">
+            </div>
+        </div>
     </section>
 
     <section class="baixe">
-        <div class="caixaBaixe"> 
+        <div class="caixaBaixe">
             <h3 class="tituloBaixe">Baixe o Jogo</h3>
             <ul class="listaVantagens">
-                <li><img src= "./source/svgs/Caminho 250.svg" alt=""> Jogue com seus amigos</li>
+                <li><img src="./source/svgs/Caminho 250.svg" alt=""> Jogue com seus amigos</li>
                 <li><img src="./source/svgs/Caminho 246.svg" alt=""> Compre itens digitais</li>
                 <li><img src="./source/svgs/Caminho 247.svg" alt=""> Torneios indepensentes</li>
             </ul>
             <button class="btnDownload">
-                <img src="./source/svgs/Caminho 249.svg" alt="">    
+                <img src="./source/svgs/Caminho 249.svg" alt="">
                 Download
             </button>
         </div>
@@ -57,42 +79,48 @@
 
     <section class="suporte">
         <h3 class="tituloSuporte">Suporte</h3>
-            <div class="container">
-                <div class="formulario">
-                <div class="nome">
-                    <!-- <label class="lblNome" for="nome">Nome</label> -->
-                    <input class="inpNome" type="text" id="nome" placeholder="Nome">
+        <div class="containerSuporte">
+            <div class="formulario">
+                <div class="wrapper">
+                    <div class="nome">
+                        <input class="suporteInput" type="text" id="nome" placeholder="">
+                        <span class="placeholder">Nome</span>
+                    </div>
                 </div>
                 <div class="sobrenome">
-                    <!-- <label class="lblSobrenome" for="sobrenome">Sobrenome</label> -->
-                    <input class="inpSobrenome" type="text" id="sobrenome" placeholder="Sobrenome">
+                    <input class="suporteInput" type="text" id="sobrenome" placeholder="">
+                    <span class="placeholder">Sobrenome</span>
                 </div>
                 <div class="email">
-                    <!-- <label class="lblEmail" for="email">E-mail</label> -->
-                    <input class="inpEmail" type="email" id="email" placeholder="E-mail">
+                    <input class="suporteInput" type="email" id="email" placeholder="">
+                    <span class="placeholder">E-Mail</span>
                 </div>
                 <div class="apelido">
-                    <!-- <label class="lblApelido" for="apelido">Apelido</label> -->
-                    <input class="inpApelido" type="text" id="apelido" placeholder="Apelido">
+                    <input class="suporteInput" type="text" id="apelido" placeholder="">
+                    <span class="placeholder">Apelido de Jogador</span>
                 </div>
                 <div class="assunto">
-                    <!-- <label class="lblAssunto" for="assunto">Assunto</label> -->
-                    <input class="inpAssunto" type="text" id="assunto" placeholder="Assunto">
+                    <input class="suporteInput" type="text" id="assunto" placeholder="">
+                    <span class="placeholder">Assunto</span>
                 </div>
                 <div class="mensagem">
-                    <!-- <label class="lblMensagem" for="mensagem">Mensagem</label> -->
-                    <textarea class="inpMensagem" id="mensagem" placeholder="Mensagem"></textarea>
-                </div>
-                <div class="btnEnviar">
-                    <button>Enviar</button>
+                    <textarea class="suporteInput" id="mensagem" placeholder=""></textarea>
+                    <span class="placeholder">Mensagem</span>
                 </div>
             </div>
-                <div class="imagem">
-                    <img src="./source/outros/suporte.png" alt="">
-                </div>
+
+            <div class="btnEnviar">
+                <button>Enviar</button>
             </div>
+
+        </div>
+        <div class="imagemSuporte">
+            <img src="./source/outros/suporte.png" alt="">
+        </div>
+        </div>
     </section>
 
     <script src="./scripts/mapas.js"></script>
 </body>
+
 </html>

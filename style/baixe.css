@@ -1,0 +1,45 @@
+/* BAIXE */
+.baixe {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tituloBaixe {
+    font-size: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.listaVantagens {
+    font-size: 20px;
+    font-weight: lighter;
+    list-style-type: none;
+    padding: 0;
+}
+
+.listaVantagens li {
+    margin: 20px 0;
+}
+
+.btnDownload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e13157;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 183px;
+    height: 36px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btnDownload img {
+    margin-right: 10px;
+}

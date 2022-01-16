@@ -1,0 +1,137 @@
+/* SUPORTE */
+.suporte {
+    background-color: #fff;
+    margin: 80px;
+    padding: 60px;
+    color: #133052;
+    border-radius: 5px;
+}
+
+.tituloSuporte {
+    font-size: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.containerSuporte {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "formulario formulario imagemSuporte"
+        "formulario formulario imagemSuporte"
+        "formulario formulario imagemSuporte";
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 25px 50px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nome sobrenome"
+        "email apelido"
+        "assunto assunto"
+        "mensagem mensagem"
+        "btnEnviar btnEnviar";
+
+    grid-area: formulario;
+    text-align: center;
+}
+
+.nome {
+    grid-area: nome;
+}
+
+.sobrenome {
+    grid-area: sobrenome;
+}
+
+.btnEnviar {
+    grid-area: btnEnviar;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mensagem {
+    grid-area: mensagem;
+}
+
+.assunto {
+    grid-area: assunto;
+}
+
+.email {
+    grid-area: email;
+}
+
+.apelido {
+    grid-area: apelido;
+}
+
+.imagemSuporte {
+    grid-area: imagemSuporte;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.suporteInput{
+    width: 100%;
+    border: #133052 solid 1px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.inpMensagem {
+    height: 140px;
+    width: 100%;
+    border: #133052 solid 1px;
+    border-radius: 5px;
+}
+
+.btnEnviar button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e13157;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 183px;
+    height: 36px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nome{
+    position: relative;
+}
+.suporteInput{
+    width: 300px;
+    height: 35px;
+    margin-top: 25px;
+    padding: 0 15px;
+    border: 1px solid #133052;
+    border-radius: 5px;
+    outline: none;
+    transform-origin: top left;
+    font-size: 1rem;
+}
+
+.placeholder{
+    position: absolute;
+    top: 35px;
+    left: 15px;
+}
+
+.suporteInput::focus{
+    top: 15px;
+}

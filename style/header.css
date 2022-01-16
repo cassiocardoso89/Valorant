@@ -3,7 +3,6 @@
     background-image: url('../source/bgs/bg1.png');
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
     height: 100vh;
     text-align: center;
 }
@@ -42,7 +41,6 @@
     justify-content: space-between;
     padding-left: 0px; /* por algum motivo tem um padding-left:40px em algum lugar q eu nao encontrei */
     list-style-type: none;
-    font-family: 'Poppins';
     text-transform: uppercase;
     font-weight: normal;
     font-size: 14px;

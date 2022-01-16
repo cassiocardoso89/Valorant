@@ -72,6 +72,8 @@
     grid-area: apelido;
 }
 
+
+
 .imagemSuporte {
     grid-area: imagemSuporte;
     display: flex;
@@ -79,18 +81,16 @@
     align-items: center;
 }
 
-.suporteInput{
+.formulario input, .formulario textarea{
     width: 100%;
     border: #133052 solid 1px;
     border-radius: 5px;
     height: 50px;
 }
 
-.inpMensagem {
+.mensagem textarea {
     height: 140px;
-    width: 100%;
-    border: #133052 solid 1px;
-    border-radius: 5px;
+    padding: 10px;
 }
 
 .btnEnviar button {

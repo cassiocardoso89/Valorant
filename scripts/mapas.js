@@ -28,7 +28,7 @@
         });
         
         //fechar modal
-        var closeBtn = document.querySelector('.btnFechar');
+        var closeBtn = document.querySelector('.btnFecharMapas');
         closeBtn.addEventListener('click', function () {
             modelBg.classList.remove('bg-active');
         });

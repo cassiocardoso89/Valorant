@@ -8,11 +8,11 @@
 
             //lista inicial
                 var containerAgentesJSON = document.querySelector('.containerAgentesJSON');
-                containerAgentesJSON.innerHTML = `
-                    <div class="addAgente">
-                    <h1>+</h1>
-                        fazer aqui o adicionar os agentes
-                    </div>`;
+                // containerAgentesJSON.innerHTML = `
+                //     <div class="addAgente">
+                //     <h1>+</h1>
+                //         fazer aqui o adicionar os agentes
+                //     </div>`;
                 agentesObj.forEach(function (agente) {
                 var agenteHTML = `
                 <div class="personagem">
@@ -27,8 +27,9 @@
             containerAgentesJSON.innerHTML += agenteHTML;
         });
         containerAgentesJSON.innerHTML += `
-            <div class="addAgente">
-                <h1>Ver Todos</h1>
+            <div class="verTodos">
+            <img src="./source/svgs/Caminho 243.svg" alt="">
+                <a href="./agentes.html">Ver Todos</a>
             </div>
         `;
 

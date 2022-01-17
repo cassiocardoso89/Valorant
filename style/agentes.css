@@ -85,7 +85,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-image: radial-gradient(hsla(175, 100%, 50%, 0.205), hsla(175, 100%, 50%, 0));
+    background:  #1330525b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,16 +106,30 @@
 .modal-json{
     padding: 20px;
     border-radius: 15px;
-    background-color: #4a0086;
-    width: 33%;
+    border: #ffffff 2px solid;
+    background-color: #ffffff;
+    color: #133052;
+    width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    /* align-items: center; */
     position: relative;
-    /* glowin border */
-    box-shadow: 0 0 0 5px #00f7ff, 0 0 0 6px #00f7ff7a,0 0 0 7px #00f7ff48,0 0 0 8px #00f7ff2a,0 0 0 9px #00f7ff15,0 0 0 10px #00f7ff0a;
-    transition: box-shadow .7s;
+}
+
+.informacoes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-json h3{
+    color: #db3131;
+    text-align: left;
+    text-transform: uppercase;
+}
+.modal-json h2{
+    font-size: 3rem;
+    text-transform: capitalize;
 }
 
 .skills{
@@ -127,7 +141,7 @@
 }
 
 .imagem{
-    width: 50%;
+    width: 100%;
 }
 
 .btnFechar{

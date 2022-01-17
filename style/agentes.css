@@ -1,8 +1,121 @@
 .agentes{
-    background-image: url('../source/bgs/bg2.png');
+    /* background-image: url('../source/bgs/bg2.png'); */
+    /* opacity: 0.1; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 1323px;
-    opacity: 0.1;
+    /* height: 1323px; */
+}
+
+.containerAgentesJSON{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.addAgente{
+    text-align: center;
+    border: #db3131 2px solid;
+}
+
+.personagem{
+    width: 310px;
+    margin: 0 auto;
+    border: #133052 solid 1px; /*externa*/
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.personagem-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: #133052 solid 1px;
+}
+
+.agentesImg{
+    width: 100%;
+}
+
+.agentesNome{
+    width: 310px;
+    height: 100%;
+    text-align: center;
+    font-weight: bolder ;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 15, 24));
+}
+
+/* modal */
+.modal-bg, .modal-bg-json{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(hsla(175, 100%, 50%, 0.205), hsla(175, 100%, 50%, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(207, 207, 207);
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal, .modal-json{
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #4a0086;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* glowin border */
+    box-shadow: 0 0 0 5px #00f7ff, 0 0 0 6px #00f7ff7a,0 0 0 7px #00f7ff48,0 0 0 8px #00f7ff2a,0 0 0 9px #00f7ff15,0 0 0 10px #00f7ff0a;
+    transition: box-shadow .7s;
+}
+
+.skills{
+    width: 100%;
+    /* border:1px solid black; */
+}
+.skillDano{
+    text-align: right;
+}
+
+.imagem{
+    width: 50%;
+}
+
+.btnFechar{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #00d9ff00;
+    border: none;
+    border-radius: 5px;
+    color: rgb(207, 207, 207);
+    font-weight: bolder;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.btnFechar::before{
+    content: "X";
 }
